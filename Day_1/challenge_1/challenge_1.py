@@ -1,5 +1,3 @@
-import os
-
 def main():
     with open("input.txt", "r+") as input:
         greater_than_count = 0

@@ -1,5 +1,3 @@
-import os
-
 def obtain_sum_of_next_three(depths, index):
     if index + 3 > len(depths):
         return False
