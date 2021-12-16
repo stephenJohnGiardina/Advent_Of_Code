@@ -1,10 +1,10 @@
 import os
 
 def main():
-    with open("sonar_sweep.txt", "r+") as ss:
+    with open("input.txt", "r+") as input:
         greater_than_count = 0
         previous = False
-        for line in ss.readlines():
+        for line in input.readlines():
             if previous == False:
                 previous = int(line)
                 continue

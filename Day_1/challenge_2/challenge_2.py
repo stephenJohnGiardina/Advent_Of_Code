@@ -7,9 +7,9 @@ def obtain_sum_of_next_three(depths, index):
         return depths[index] + depths[index + 1] + depths[index + 2]
 
 def main():
-    with open("sonar_sweep.txt", "r+") as ss:
+    with open("input.txt", "r+") as input:
         depths = []
-        for line in ss.readlines():
+        for line in input.readlines():
             depths.append(int(line))
         greater_than_count = 0
         previous = False
