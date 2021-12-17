@@ -1,5 +1,5 @@
 def challenge_1():
-    with open("input.txt", "r+") as input:
+    with open("Day_1/input.txt", "r+") as input:
         greater_than_count = 0
         previous = False
         for line in input.readlines():
@@ -13,7 +13,7 @@ def challenge_1():
     print(greater_than_count)
 
 def challenge_2():
-    with open("input.txt", "r+") as input:
+    with open("Day_1/input.txt", "r+") as input:
         depths = []
         for line in input.readlines():
             depths.append(int(line))

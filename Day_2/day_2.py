@@ -1,7 +1,7 @@
 def challenge_1():
     depth = 0
     length = 0
-    with open("input.txt", "r+") as input:
+    with open("Day_2/input.txt", "r+") as input:
         for line in input.readlines():
             distance = int(line.split(" ")[1])
             if "forward" in line:
@@ -17,7 +17,7 @@ def challenge_2():
     depth = 0
     length = 0
     aim = 0
-    with open("input.txt", "r+") as input:
+    with open("Day_2/input.txt", "r+") as input:
         for line in input.readlines():
             distance = int(line.split(" ")[1])
             if "forward" in line:
