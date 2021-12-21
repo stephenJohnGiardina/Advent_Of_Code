@@ -1,5 +1,3 @@
-import matplotlib.pyplot as plt
-
 def challenge_1():
     lantern_fish = obtain_lantern_fish()
     
