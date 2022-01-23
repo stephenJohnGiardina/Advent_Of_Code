@@ -102,3 +102,4 @@ def only_one_small_path_revisited(path):
 if __name__ == "__main__":
     challenge_1()
     challenge_2()
+    
