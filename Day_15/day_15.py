@@ -1,10 +1,6 @@
 from datetime import datetime
 
 
-from distutils import extension
-from numpy import full
-
-
 def challenge_1():
     chitons_graph = Graph(load_chitons())
     print("Chitons loaded. Beginning search.")
