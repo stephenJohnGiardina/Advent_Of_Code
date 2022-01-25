@@ -1,3 +1,6 @@
+from datetime import datetime
+
+
 def challenge_1():
     height_map = load_height_map()
     low_points = find_low_points(height_map)
@@ -86,5 +89,14 @@ def obtain_adjacent_points(low_point, height_map, adjacent_points):
             obtain_adjacent_points((row, col + 1), height_map, adjacent_points)
 
 if __name__ == "__main__":
+    print("Starting Challenges for Day 9")
+
+    print("Starting Challenge 1")
+    challenge_1_start_time = datetime.now()
     challenge_1()
+    print("Challenge 1 complete in " + str(datetime.now() - challenge_1_start_time))
+
+    print("Starting Challenge 2")
+    challenge_2_start_time = datetime.now()
     challenge_2()
+    print("Challenge 2 complete in " + str(datetime.now() - challenge_2_start_time))

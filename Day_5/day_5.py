@@ -1,3 +1,6 @@
+from datetime import datetime
+
+
 def challenge_1():
     coordinate_map = make_coordinate_map(1000)
     coordinates = load_coordinates()
@@ -119,5 +122,14 @@ def update_coordinate_map_diagonal_down(start_point, end_point, coordinate_map):
         start_y -= 1
 
 if __name__ == "__main__":
+    print("Starting Challenges for Day 5")
+
+    print("Starting Challenge 1")
+    challenge_1_start_time = datetime.now()
     challenge_1()
+    print("Challenge 1 complete in " + str(datetime.now() - challenge_1_start_time))
+
+    print("Starting Challenge 2")
+    challenge_2_start_time = datetime.now()
     challenge_2()
+    print("Challenge 2 complete in " + str(datetime.now() - challenge_2_start_time))

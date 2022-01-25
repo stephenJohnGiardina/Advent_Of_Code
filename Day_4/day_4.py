@@ -1,3 +1,6 @@
+from datetime import datetime
+
+
 def challenge_1():
     moves, boards = load_moves_and_boards()
 
@@ -89,5 +92,14 @@ def challenge_2():
     print(score)
 
 if __name__ == "__main__":
+    print("Starting Challenges for Day 4")
+
+    print("Starting Challenge 1")
+    challenge_1_start_time = datetime.now()
     challenge_1()
+    print("Challenge 1 complete in " + str(datetime.now() - challenge_1_start_time))
+
+    print("Starting Challenge 2")
+    challenge_2_start_time = datetime.now()
     challenge_2()
+    print("Challenge 2 complete in " + str(datetime.now() - challenge_2_start_time))
