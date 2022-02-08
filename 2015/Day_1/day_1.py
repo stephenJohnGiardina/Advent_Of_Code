@@ -2,10 +2,34 @@ from datetime import datetime
 
 
 def challenge_1():
-    pass
+    directions = obtain_directions()
+    floor = 0
+    for direction in directions:
+        if direction == "(":
+            floor += 1
+        if direction == ")":
+            floor -= 1
+
+    print("Final floor =", floor)
+
+def obtain_directions():
+    with open("2015/Day_1/input.txt", "r+") as input:
+        return input.readline()
 
 def challenge_2():
-    pass
+    directions = obtain_directions()
+    current_position = 1
+    floor = 0
+    for direction in directions:
+        if direction == "(":
+            floor += 1
+        if direction == ")":
+            floor -= 1
+        if floor == -1:
+            break
+        current_position += 1
+
+    print("Basement first reached at position", current_position)
 
 if __name__ == "__main__":
     print("Starting Challenges for Year 2015 Day 1")
