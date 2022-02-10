@@ -4,6 +4,10 @@ from datetime import datetime
 def challenge_1():
     pass
 
+def obtain_input():
+    with open("2015/Day_19/input.txt", "r+") as input:
+        pass
+
 def challenge_2():
     pass
 
