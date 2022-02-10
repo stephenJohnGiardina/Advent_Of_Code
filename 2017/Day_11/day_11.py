@@ -19,4 +19,3 @@ if __name__ == "__main__":
     challenge_2_start_time = datetime.now()
     challenge_2()
     print("Challenge 2 complete in " + str(datetime.now() - challenge_2_start_time))
-                    
