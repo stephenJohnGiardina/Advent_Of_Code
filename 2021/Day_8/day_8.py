@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -15,7 +16,7 @@ def challenge_1():
 
 def load_all_signals_and_digits():
     all_signals_and_digits = []
-    with open("2021/Day_8/input.txt", "r+") as input:
+    with open(os.path.join("2021", "Day_8", "input.txt"), "r+") as input:
         for line in input.readlines():
             signals, digits = list(map(lambda x: x.strip().split(), line.split("|")))
             all_signals_and_digits.append(

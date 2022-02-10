@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -174,7 +175,7 @@ def find_shortest_path(chitons_graph, start, target):
 
 def load_chitons():
     chitons_map = []
-    with open("2021/Day_15/input.txt", "r+") as input:
+    with open(os.path.join("2021", "Day_15", "input.txt"), "r+") as input:
         for line in input.readlines():
             chitons_map.append(list(map(lambda x: int(x), line.strip())))
 

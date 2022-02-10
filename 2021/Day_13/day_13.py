@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -11,7 +12,7 @@ def load_paper():
     coordinates = []
     instructions = []
     all_coordinates_found = False
-    with open("2021/Day_13/input.txt", "r+") as input:
+    with open(os.path.join("2021", "Day_13", "input.txt"), "r+") as input:
         for line in input.readlines():
             if line.strip() == "":
                 all_coordinates_found = True

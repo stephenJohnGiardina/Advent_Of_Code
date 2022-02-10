@@ -1,3 +1,4 @@
+import os
 import hashlib
 from datetime import datetime
 
@@ -15,7 +16,7 @@ def challenge_1():
     print("Lowest decimal number =", decimal_number)
 
 def obtain_secret_key():
-    with open("2015/Day_4/input.txt", "r+") as input:
+    with open(os.path.join("2015", "Day_4", "input.txt"), "r+") as input:
         return input.readline()
 
 def obtain_md5_hash(secret_key):

@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -8,7 +9,7 @@ def challenge_1():
     print("length of", original_number, "after 40 look and say processes = ", len(number))
 
 def obtain_number():
-    with open("2015/Day_10/input.txt", "r+") as input:
+    with open(os.path.join("2015", "Day_10", "input.txt"), "r+") as input:
         return input.readline()
 
 def look_and_say_process(number):

@@ -1,8 +1,9 @@
+import os
 from datetime import datetime
 
 
 def challenge_1():
-    with open("2021/Day_1/input.txt", "r+") as input:
+    with open(os.path.join("2021", "Day_1", "input.txt"), "r+") as input:
         greater_than_count = 0
         previous = False
         for line in input.readlines():
@@ -16,7 +17,7 @@ def challenge_1():
     print(greater_than_count)
 
 def challenge_2():
-    with open("2021/Day_1/input.txt", "r+") as input:
+    with open(os.path.join("2021", "Day_1", "input.txt"), "r+") as input:
         depths = []
         for line in input.readlines():
             depths.append(int(line))

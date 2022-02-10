@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -15,7 +16,7 @@ def challenge_1():
 def load_polymer_data():
     pair_insertion = {}
     polymer_template_obtained = False
-    with open("2021/Day_14/input.txt", "r+") as input:
+    with open(os.path.join("2021", "Day_14", "input.txt"), "r+") as input:
         for line in input.readlines():
             if line.strip() == "":
                 polymer_template_obtained = True

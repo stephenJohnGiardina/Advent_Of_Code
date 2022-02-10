@@ -1,10 +1,11 @@
+import os
 from datetime import datetime
 
 
 def challenge_1():
     binary_data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     number_of_lines = 0
-    with open("2021/Day_3/input.txt", "r+") as input:
+    with open(os.path.join("2021", "Day_3", "input.txt"), "r+") as input:
         for line in input.readlines():
             number_of_lines += 1
             bits = line.strip()
@@ -28,7 +29,7 @@ def challenge_1():
     print(gamma_rate * epsilon_rate)
 
 def challenge_2():
-    with open("2021/Day_3/input.txt", "r+") as input:
+    with open(os.path.join("2021", "Day_3", "input.txt"), "r+") as input:
         binary_data = input.readlines()
 
     binary_data = list(map(lambda x: x.strip(), binary_data))

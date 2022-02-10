@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -5,7 +6,7 @@ def challenge_1():
     pass
 
 def obtain_input():
-    with open("2020/Day_14/input.txt", "r+") as input:
+    with open(os.path.join("2020", "Day_14", "input.txt"), "r+") as input:
         pass
 
 def challenge_2():

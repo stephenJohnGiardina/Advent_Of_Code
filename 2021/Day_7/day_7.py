@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -13,7 +14,7 @@ def challenge_1():
     print(min(fuel_values))
 
 def obtain_crabs():
-    with open("2021/Day_7/input.txt", "r+") as input:
+    with open(os.path.join("2021", "Day_7", "input.txt"), "r+") as input:
         return list(map(lambda x: int(x), input.readline().split(",")))
 
 def find_fuel(crab_location, crabs):

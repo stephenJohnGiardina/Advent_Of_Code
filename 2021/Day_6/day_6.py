@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -10,7 +11,7 @@ def challenge_1():
     print(len(lantern_fish))
 
 def obtain_lantern_fish():
-    with open("2021/Day_6/input.txt", "r+") as input:
+    with open(os.path.join("2021", "Day_6", "input.txt"), "r+") as input:
         return list(map(lambda x: int(x), input.readline().split(",")))
 
 def wait_day(lantern_fish):
@@ -38,7 +39,7 @@ def challenge_2():
 
 def obtain_lantern_fish_memo():
     lantern_fish_memo = [0, 0, 0, 0, 0, 0, 0, 0, 0]
-    with open("2021/Day_6/input.txt", "r+") as input:
+    with open(os.path.join("2021", "Day_6", "input.txt"), "r+") as input:
         lantern_fish_list = list(map(lambda x: int(x), input.readline().split(",")))
     
     for lantern_fish in lantern_fish_list:

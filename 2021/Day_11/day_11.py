@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -16,7 +17,7 @@ def challenge_1():
 
 def load_octopuses():
     octopuses = []
-    with open("2021/Day_11/input.txt", "r+") as input:
+    with open(os.path.join("2021", "Day_11", "input.txt"), "r+") as input:
         for line in input.readlines():
             octopuses.append(list(map(lambda x: int(x), line.strip())))
     return octopuses

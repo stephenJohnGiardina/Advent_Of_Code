@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -14,7 +15,7 @@ def challenge_1():
 def load_syntaxes():
     syntax = []
 
-    with open("2021/Day_10/input.txt", "r+") as input:
+    with open(os.path.join("2021", "Day_10", "input.txt"), "r+") as input:
         for line in input:
             syntax.append(line.strip())
         

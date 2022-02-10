@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -15,7 +16,7 @@ def challenge_1():
 
 def obtain_strings():
     strings = []
-    with open("2015/Day_5/input.txt", "r+") as input:
+    with open(os.path.join("2015", "Day_5", "input.txt"), "r+") as input:
         for line in input.readlines():
             strings.append(line.strip())
     return strings

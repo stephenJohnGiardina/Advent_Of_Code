@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -15,7 +16,7 @@ def challenge_1():
 def load_height_map():
     height_map = []
 
-    with open("2021/Day_9/input.txt", "r+") as input:
+    with open(os.path.join("2021", "Day_9", "input.txt"), "r+") as input:
         for line in input.readlines():
 
             height_map.append(list(map(lambda x: int(x), line.strip())))

@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -22,7 +23,7 @@ def make_coordinate_map(side_length):
 
 def load_coordinates():
     coordinates = []
-    with open("2021/Day_5/input.txt", "r+") as input:
+    with open(os.path.join("2021", "Day_5", "input.txt"), "r+") as input:
         for line in input.readlines():
             coordinate_pair = list(map(lambda x: x.strip(), line.split("->")))
             coordinate_pair = list(map(lambda x: x.split(","), coordinate_pair))

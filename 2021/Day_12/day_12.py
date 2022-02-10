@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -12,7 +13,7 @@ def challenge_1():
 
 def load_cave_system():
     cave_system = {}
-    with open("2021/Day_12/input.txt", "r+") as input:
+    with open(os.path.join("2021", "Day_12", "input.txt"), "r+") as input:
         for line in input.readlines():
             cave_1, cave_2 = line.strip().split("-")
             if cave_1 not in cave_system:

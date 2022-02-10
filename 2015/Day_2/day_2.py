@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -10,7 +11,7 @@ def challenge_1():
 
 def obtain_presents():
     presents = []
-    with open("2015/Day_2/input.txt", "r+") as input:
+    with open(os.path.join("2015", "Day_2", "input.txt"), "r+") as input:
         for line in input.readlines():
             presents.append(list(map(lambda x: int(x), line.strip().split("x"))))
     return presents

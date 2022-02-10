@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -13,7 +14,7 @@ def challenge_1():
     print("Final floor =", floor)
 
 def obtain_directions():
-    with open("2015/Day_1/input.txt", "r+") as input:
+    with open(os.path.join("2015", "Day_1", "input.txt"), "r+") as input:
         return input.readline()
 
 def challenge_2():

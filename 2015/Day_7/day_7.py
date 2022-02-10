@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -7,7 +8,7 @@ def challenge_1():
 
 def obtain_circuit():
     circuit = {}
-    with open("2015/Day_7/input.txt", "r+") as input:
+    with open(os.path.join("2015", "Day_7", "input.txt"), "r+") as input:
         for line in input.readlines():
             wire = line.strip().split("->")[-1].strip()
             operation = line.strip().split("->")[0].strip()

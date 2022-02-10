@@ -1,3 +1,4 @@
+import os
 import json
 from datetime import datetime
 
@@ -8,7 +9,7 @@ def challenge_1():
     print("The sum of all numbers found in JSON document = ", sum_of_all_numbers)
 
 def obtain_document():
-    with open("2015/Day_12/input.txt", "r+") as input:
+    with open(os.path.join("2015", "Day_12", "input.txt"), "r+") as input:
         return json.load(input)
 
 def obtain_sum(document, ignore_red=False):

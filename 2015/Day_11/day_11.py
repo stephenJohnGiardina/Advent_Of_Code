@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -7,7 +8,7 @@ def challenge_1():
     print("The next password after password", password, "=", next_password)
 
 def obtain_password():
-    with open("2015/Day_11/input.txt", "r+") as input:
+    with open(os.path.join("2015", "Day_11", "input.txt"), "r+") as input:
         return input.readline()
 
 def obtain_next_password(password):

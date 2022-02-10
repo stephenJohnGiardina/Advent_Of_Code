@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 def challenge_1():
@@ -15,7 +16,7 @@ class City:
 
 def obtain_cities():
     cities = {}
-    with open("2015/Day_9/input.txt", "r+") as input:
+    with open(os.path.join("2015", "Day_9", "input.txt"), "r+") as input:
         for line in input.readlines():
             distance = int(line.split("=")[-1].strip())
             city_1, city_2 = list(map(lambda x : x.strip(), line.split("=")[0].split("to")))

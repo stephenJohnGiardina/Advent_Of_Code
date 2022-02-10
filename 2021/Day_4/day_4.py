@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -18,7 +19,7 @@ def challenge_1():
     print(score)
 
 def load_moves_and_boards():
-    with open("2021/Day_4/input.txt", "r+") as input:
+    with open(os.path.join("2021", "Day_4", "input.txt"), "r+") as input:
         first = True
         boards = []
         previous = []

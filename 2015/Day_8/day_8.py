@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -11,7 +12,7 @@ def challenge_1():
 
 def obtain_santas_list():
     santas_list = []
-    with open("2015/Day_8/input.txt", "r+") as input:
+    with open(os.path.join("2015", "Day_8", "input.txt"), "r+") as input:
         for line in input.readlines():
             santas_list.append(line.strip())
     return santas_list

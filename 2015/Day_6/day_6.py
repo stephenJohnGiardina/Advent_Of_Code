@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 
@@ -23,7 +24,7 @@ def challenge_1():
 
 def obtain_instructions():
     instructions = []
-    with open("2015/Day_6/input.txt", "r+") as input:
+    with open(os.path.join("2015", "Day_6", "input.txt"), "r+") as input:
         for line in input.readlines():
             start_coordinate = tuple(map(lambda x: int(x), line.strip().split(" ")[-3].split(",")))
             end_coordinate = tuple(map(lambda x: int(x), line.strip().split(" ")[-1].split(",")))
